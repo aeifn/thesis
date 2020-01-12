@@ -1,0 +1,7 @@
+*.log
+*.aux
+*.gz
+.ipynb_checkpoints
+library
+img
+*~
