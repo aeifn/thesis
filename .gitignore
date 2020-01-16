@@ -2,6 +2,8 @@
 *.aux
 *.gz
 .ipynb_checkpoints
-library
+lib
 img
 *~
+*.pdf
+*.toc
