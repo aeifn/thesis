@@ -1,10 +1,7 @@
+*.gz
 *.log
 *.aux
-*.gz
 .ipynb_checkpoints
-lib
-img
 *~
-*.pdf
 *.toc
 venv
