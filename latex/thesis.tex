@@ -19,7 +19,7 @@
 
 %Includes "References" in the table of contents
 %\usepackage[nottoc]{tocbibind}
-\usepackage{biblatex}
+\usepackage[sorting=ynt]{biblatex}
 %\usepackage[style=alphabetic,
 %	sorting=ynt]{biblatex}
 %\addbibresource{biblio.bib}
@@ -36,20 +36,21 @@
 \maketitle
 
 \abstract{
-В работе производится обзор литературы по теме и модельный анализ проблем, связанных с принятием транспортных решений. Рассматривается задача о пробках вокруг мест проведения массовых мероприятий и гипотеза о том, что в равновесии ...  
+В работе производится модельный анализ проблем, связанных с принятием транспортных решений. В частности, рассматривается задача о нехватке парковочных мест вокруг объектов проведения массовых мероприятий.
 }
 \tableofcontents
 
 
 \include{MAIN}
 
+\include{CLASSIFICATION}
 
 \medskip
 %Sets the bibliography style to UNSRT and imports the 
 %bibliography file "samples.bib".
 %\bibliographystyle{biblatex}
 
-
-\printbibliography
+\nocite{*}
+\printbibliography[heading=bibintoc]
 
 \end{document}

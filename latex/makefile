@@ -1,6 +1,7 @@
 all: build
 build:
 	pdflatex thesis.tex
+	biber thesis
 	pdflatex thesis.tex
 lib: lib/newllang.pdf
 lib/newllang.pdf:
@@ -8,4 +9,4 @@ lib/newllang.pdf:
 	cd lib
 	fetch -o lib/newllang.pdf https://www.mccme.ru/free-books/llang/newllang.pdf
 clean:
-	rm *.pdf *.toc *.aux *.log *.out *.tex~ *synctex*
+	rm *.pdf *.toc *.aux *.log *.out *.tex~ *synctex* *~ *.sav *.bbl *.bcf *.blg *.run.xml *.bak
