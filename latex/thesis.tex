@@ -1,31 +1,5 @@
-
 \documentclass[a4paper, 14pt]{report}
-
-\usepackage{cmap}
-\usepackage[russian]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{pythonhighlight}
-
-% чтобы работало окружение comment
-\usepackage{verbatim}
-
-% set space
-\usepackage{setspace}
-% увеличить стандартный интерлиньяж
-\renewcommand{\baselinestretch}{1.2} 
-
-%Includes "References" in the table of contents
-%\usepackage[nottoc]{tocbibind}
-\usepackage[sorting=ynt]{biblatex}
-%\usepackage[style=alphabetic,
-%	sorting=ynt]{biblatex}
-%\addbibresource{biblio.bib}
-\bibliography{biblio}
-
-\usepackage[stable]{footmisc}
+\include{config}
 
 \author{Егор Кузьмичев}
 \title{Теоретико-игровой анализ транспортных пробок вокруг мест проведения массовых мероприятий}
@@ -38,6 +12,7 @@
 \abstract{
 В работе производится модельный анализ проблем, связанных с принятием транспортных решений. В частности, рассматривается задача о нехватке парковочных мест вокруг объектов проведения массовых мероприятий.
 }
+
 \tableofcontents
 
 
@@ -51,9 +26,6 @@
 \include{classification}
 
 \medskip
-%Sets the bibliography style to UNSRT and imports the 
-%bibliography file "samples.bib".
-%\bibliographystyle{biblatex}
 
 \nocite{*}
 \printbibliography[heading=bibintoc]
