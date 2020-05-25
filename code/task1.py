@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from scipy.special import binom
 from sys import argv
 
-
 N=int(argv[1])
 M=int(argv[2])
 
