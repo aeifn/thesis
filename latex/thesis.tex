@@ -1,20 +1,23 @@
-\documentclass[a4paper, 14pt]{report}
 \include{config}
 
-\author{Егор Кузьмичев}
-\title{Теоретико-игровой анализ транспортных пробок вокруг мест проведения массовых мероприятий}
-\date{\today}
-% \contentsname{Содержание}
-
 \begin{document}
-\maketitle
+%\maketitle
+\pagenumbering{gobble}
+\includepdf[pages=1,pagecommand={}]{title.pdf}
+\pagenumbering{arabic}
 
 \abstract{
 В работе производится модельный анализ проблем, связанных с принятием транспортных решений. В частности, рассматривается задача о нехватке парковочных мест вокруг объектов проведения массовых мероприятий.
 }
 
-\tableofcontents
+\vspace*{\fill}
 
+\begin{center}
+\today
+\end{center}
+
+
+\tableofcontents
 
 \include{intro}
 \include{theory}
