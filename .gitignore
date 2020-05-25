@@ -1,8 +1,0 @@
-*.gz
-*.log
-*.aux
-.ipynb_checkpoints
-*~
-*.toc
-venv
-.DS_Store
